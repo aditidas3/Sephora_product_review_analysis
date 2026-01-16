@@ -1,0 +1,35 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+
+# --------------------
+# Virtual environments
+# --------------------
+env/
+venv/
+.venv/
+
+# --------------------
+# Jupyter Notebook
+# --------------------
+.ipynb_checkpoints/
+
+# --------------------
+# Data files (raw & processed)
+# --------------------
+data/raw/
+data/processed/
+
+# --------------------
+# OS / Editor files
+# --------------------
+.DS_Store
+Thumbs.db
+.vscode/
+
+# --------------------
+# Logs & temp files
+# --------------------
+*.log
