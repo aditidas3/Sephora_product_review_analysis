@@ -44,7 +44,6 @@ project-name/
 │   ├── 03_topics.ipynb
 │   └── 04_recommendation.ipynb
 ├── src/
-│   ├── data_preprocessing.py
 │   ├── sentiment.py
 └── .gitignore
 ```
@@ -84,15 +83,16 @@ Sentiment scores correlate positively with ratings, but textual sentiment provid
 * Applied Latent Dirichlet Allocation (LDA) to negative and neutral reviews
 * Identified major concern themes such as:
 
+  * Makeup and sun protection
   * Acne and breakouts
   * Dry and sensitive skin
   * Eye care effectiveness
   * Product dissatisfaction (smell/texture)
-* Topic distribution analyzed across:
 
+* Topic distribution analyzed across:
   * Skin types
   * Product categories
-* Ingredient-specific concern analysis using keyword matching
+  * Ingredient-specific concern analysis using keyword matching
 
 *Key Insight:*
 Certain skincare concerns and ingredients appear disproportionately in negative reviews, especially among sensitive and acne-prone skin types.
@@ -102,25 +102,23 @@ Certain skincare concerns and ingredients appear disproportionately in negative 
 ### 04. Recommendation Prediction
 
 * Target variable: `is_recommended`
+
 * Feature set includes:
-
-  * Product attributes
+  * Product rating and price
   * Sentiment scores
-  * Topic labels
+  * Brands
   * Skin type and category information
-* Model progression:
 
+* Model progression:
   * Baseline logistic regression
-  * Tree-based models
   * XGBoost (final model)
 
 Final Model Performance:
-
-* Accuracy: ~75%
-* AUC-ROC: ~0.83
+* Accuracy: ~96%
+* AUC-ROC: ~0.98
 
 *Key Insight:*
-Review sentiment and topic-level concerns are among the strongest predictors of product recommendation likelihood.
+Review sentiment and product rating are among the strongest predictors of product recommendation likelihood.
 
 ---
 
